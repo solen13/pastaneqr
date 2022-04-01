@@ -120,7 +120,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-flow: column;
-   width: 120px;
+   width: 116px;
    height: 200px;
    background-color: antiquewhite;
 margin: auto;
@@ -133,7 +133,7 @@ margin-top: 6px;
  }
 
 .galeri ul li img {
-    width: 120px;
+    width: 116px;
     height: 120px;
 }
 
