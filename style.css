@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: cursive;
+    font-family: cursive,Arial, Helvetica, sans-serif;
     list-style: none;
     border: none;
     text-decoration: none;
@@ -14,6 +14,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+   
 }
 .Header img{
     width: 50px;
