@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+}
+.Header{
+    width: 100%;
+    height: 100px;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Header img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.header-iletisim h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+
+       animation: blinker 2s linear infinite;
+       
+ 
+    
+}
+   @keyframes blinker {
+       50% {
+           opacity:.3;
+       }
+   }
+.header-iletisim a {
+    text-align: center;
+    margin-top: 10px;
+      font-size: 1.5rem;
+      margin-left:18%;
+      font-weight: 900;
+}
+
+
+
+
+
+
+.Banner
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.urun-ad{
+    text-align: center;
+    margin: 15px;
+}
+
+.Banner .silder{
+    width: 90%;
+    height: 150px;
+    background-color: beige;
+    align-self: center;
+    margin-top: 10px;
+   
+}
+
+
+ .silder-image {
+    width: 100%;
+    height: 200px;
+
+}
+.milk-sweet{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+
+.Konum {
+    width: 100%;
+    height: 200px;
+   
+}
+
+.Konum iframe{
+  width: 100%;
+
+}
+ .konum-bilgisi{
+    font-size: 2rem;
+    margin: 15px;
+    text-align: center; 
+    font-weight: 900;
+}
+
+.galeri .cesit-ad {
+  margin-bottom: 8px;
+}
+.galeri ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    
+}
+.galeri ul li{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-flow: column;
+   width: 120px;
+   height: 200px;
+   background-color: antiquewhite;
+margin: auto;
+margin-top: 6px;
+
+}
+
+ .galeri .milk-fiyat{
+     font-size: 20px;
+ }
+
+.galeri ul li img {
+    width: 120px;
+    height: 120px;
+}
+
+
+
+
+.Footer{
+    width: 100%;
+    height: 100px;
+    
+    margin-top: 60px;
+    font-size: 20px;
+}
+.Footer p{
+    text-align: center;
+}
+.sosyal-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sosyal-icon i{
+    font-size: 2rem;
+    text-align: center;
+    margin: 15px;
+    color: #000000;
+}
