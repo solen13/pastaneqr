@@ -1,23 +1,30 @@
 var models = [
     {
        
-        image : './image/trilce.jpg',
+        image : './image/mekan/dısmekan-1.jpeg',
      
     },
     {
        
-        image : './image/trilce.jpg',
+        image : './image/baklava/cevizlibaklava.jpg',
        
     },
     {
         
-        image : './image/sutlu1.jpg',
+        image : './image/mekan/image7.jpg',
         
     },
     {
-        image : './image/gulac.jpg',
+        image : './image/sıcaktatlı/lokmaTatlısı.jpg',
      
     },
+
+     {
+        image : '  ./image/baklava/kadayıf.jpg',
+     
+    }
+
+  
   
 ];
 
@@ -86,16 +93,35 @@ function showSlide(i){
 
 var colors=[
     {
-        color:'#f0f8ff'
+        color:' #f0bd20'
     },
     {
-        color:'#000000'
+        color:'#6b60d1'
+    },
+     {
+        color:'#148486 '
+    },
+     {
+        color:'#69b5ae '
     }
+    ,
+     {
+        color:'#906d08'
+    }
+    ,
+     {
+        color:' #3c3c3c '
+    }
+    ,
+     {
+        color:'#714464 '
+    }
+
       
 ]
 
 var set={
-    duration : '150',
+    duration : '550',
    
 };
 
@@ -119,15 +145,80 @@ document.querySelector('.tlf').style.color=colors[i].color ;
 
 
 
-
  
 
 
 
 
 
+const ornek=document.querySelector('.button-active');
+const v=document.querySelector('.v');
+const cıkıs=document.querySelector('.cıkıs');
+const ornewnek=document.querySelector('.ornek');
+const acılırContent=document.querySelector('.acılır-content');
+/*const contener=document.querySelector('.contentener'); */
+const body=document.querySelector('body');
+
+const x=document.querySelector('.x');
 
 
 
 
 
+
+
+cıkıs.addEventListener('click',e=>{
+   
+    
+    
+    acılırContent.classList.add('acılırda-icerikleri-delete');
+
+   cıkıs.classList.add('acılırda-icerikleri-delete');
+
+      ornewnek.style.display='none';
+
+
+ ornewnek.classList.remove('Animation-acılır');
+
+
+    body.style.overflow='visible';
+
+  
+
+
+
+})
+
+
+
+contener.addEventListener('click',e=>{
+    
+    
+    if(e.target.classList.contains('li-content')){
+
+
+              
+    ornewnek.classList.add('Animation-acılır');
+
+         ornewnek.style.display='block';
+        body.style.overflow='hidden';
+ 
+
+   acılırContent.classList.remove('acılırda-icerikleri-delete');
+   cıkıs.classList.remove('acılırda-icerikleri-delete');
+
+        console.log(e.target);
+
+        let tatlıad=document.querySelector('.tatlıad');
+
+       
+        
+  
+          
+          
+
+    }
+ 
+
+
+});
