@@ -15,18 +15,6 @@ let btn =document.querySelector('.btn');
             
 
 
-         
-         
-
-
-
-
-
-
-
-
-
-
        if(name.value ==='') {
          document.querySelector('.active-1').style.opacity='1';
           name.classList.add('error');
@@ -73,13 +61,6 @@ let btn =document.querySelector('.btn');
 
 
 
-
-
-
-
-
-
-
   
 
 
@@ -87,16 +68,7 @@ let btn =document.querySelector('.btn');
  
 
 
-
-
-
-
-
-
-
-
-
- var bodyy='isim:  '+name.value+ ' Email:  ' + email.value+'konu:  '+konu.value+'  mesaj:  '+messagee.value;
+ var bodyy='isim:  '+ name.value+ ' Email:  ' + email.value+'  konu:  '+konu.value+'  mesaj:  '+messagee.value;
    
 if(email.value!=''&& name.value!='' && konu.value!='' &&messagee.value!='' ){
    
@@ -118,9 +90,11 @@ console.log('call');
     Body : bodyy
   }).then(
             message => alert(message)
+            
       );
 
-  
+    
+
 
 }
 
@@ -130,6 +104,10 @@ else{
 
 
 
+    
         })
 
-        
+        function fromrest(){
+         email.value='' && konu.value==''&& email.value=='' &&messagee.value=='';
+
+        }

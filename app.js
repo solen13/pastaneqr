@@ -145,7 +145,10 @@ document.querySelector('.tlf').style.color=colors[i].color ;
 
 
 
- 
+window.onload=function(){
+
+    document.querySelector('.loding').style.display='none';
+}
 
 
 

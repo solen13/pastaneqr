@@ -16,6 +16,55 @@
     position: relative;
 }
 
+
+.loding{
+    width: 100%;
+    height: 100vh;
+    background-color: #F4F4F4;
+   position: fixed;
+    z-index: 9999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.loding h2{
+    font-size: 24px;
+    font-weight: 900;
+   font-family:'Coiny', cursive,Arial, Helvetica, sans-serif ;
+   margin-bottom: 10px;
+   color: #4C4C4C;
+   text-align: center;
+   
+}
+
+.loding p{
+    font-size: 16px;
+       font-family:'Coiny', cursive,Arial, Helvetica, sans-serif ;
+       margin-bottom: 5px;
+       color: #4C4C4C;
+}
+.yukle{
+    width: 140px;
+    height: 140px;
+    border: 10px solid rgb(187, 181, 181);
+    border-radius: 50%;
+    border-top: 10px solid rgb(214, 95, 95);
+
+    animation: login-animate 500ms infinite;
+}
+
+@keyframes  login-animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+transform: rotate(360deg);
+    }
+}
+
+
 .watsapp{
     position: fixed;
     bottom: 0;
