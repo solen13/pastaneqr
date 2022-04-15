@@ -151,74 +151,29 @@ document.querySelector('.tlf').style.color=colors[i].color ;
 
 
 
-const ornek=document.querySelector('.button-active');
-const v=document.querySelector('.v');
+
 const cıkıs=document.querySelector('.cıkıs');
-const ornewnek=document.querySelector('.ornek');
-const acılırContent=document.querySelector('.acılır-content');
-/*const contener=document.querySelector('.contentener'); */
 const body=document.querySelector('body');
+const ornekacılır=document.querySelector('.ornek');
 
-const x=document.querySelector('.x');
+   document.querySelectorAll('.ul-contener .li-content img').forEach(imaage=>{
+                imaage.onclick=()=>{
+                     document.querySelector('.ornek').style.display='block';
+                     document.querySelector('.ornek img').src=imaage.getAttribute('src');      
+                        
+             body.style.overflow='hidden';
 
+                }
 
-
-
-
-
-
-cıkıs.addEventListener('click',e=>{
-   
-    
-    
-    acılırContent.classList.add('acılırda-icerikleri-delete');
-
-   cıkıs.classList.add('acılırda-icerikleri-delete');
-
-      ornewnek.style.display='none';
-
-
- ornewnek.classList.remove('Animation-acılır');
-
-
-    body.style.overflow='visible';
+            })
+            cıkıs.addEventListener('click',e=>{
+                ornekacılır.style.display='none'
+                  body.style.overflow='visible';
+            })
 
   
 
 
 
-})
 
 
-
-contener.addEventListener('click',e=>{
-    
-    
-    if(e.target.classList.contains('li-content')){
-
-
-              
-    ornewnek.classList.add('Animation-acılır');
-
-         ornewnek.style.display='block';
-        body.style.overflow='hidden';
- 
-
-   acılırContent.classList.remove('acılırda-icerikleri-delete');
-   cıkıs.classList.remove('acılırda-icerikleri-delete');
-
-        console.log(e.target);
-
-        let tatlıad=document.querySelector('.tatlıad');
-
-       
-        
-  
-          
-          
-
-    }
- 
-
-
-});

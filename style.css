@@ -22,7 +22,7 @@
     right: 0;
     margin-bottom: 30px;
     margin-right: 10px;
-    z-index: 99999;
+    z-index: 99;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,7 +120,7 @@ color: rgb(97, 93, 93);
     .Animation-acılır{
  
 animation-name: b;
-    animation-duration: 2s;
+    animation-duration: 1,5s;
     animation-timing-function:ease;
     animation-fill-mode: forwards;
 
@@ -156,28 +156,45 @@ animation-name: b;
 
 }
 
-
-
+.error{
+    border: 2px solid red;
+    transition: 300ms all;
+}
+.new-stil{
+    color: #F4F4F4;
+    background-color: red;
+    padding: 5px;
+    font-size: 12px;
+    margin-left: -55%;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    transition: 300ms all;
+    border-radius: 5px;
+}
 
 
     .ornek{
       
         position: fixed;
-        margin-top: 30%;
-        display: none;
+        margin-top: 40%;
       
+        display: none;
         color: #f0f8ff;
+        background-color: #94deed;
+        width: 100%;
+        height: 300px;
         
-   
       
      
     }
     .ornek img{
-        width: 160px;
-        height: 150px;
-        margin-left: 30%;
-        margin-top: 10px;
+      width: 100%;
+         height: 300px;
+       
+        
         border-radius: 5px;
+        margin: auto;
+        border: 3px solid rgb(105, 102, 102);
 
     }
     .ornek .icindekiler{
@@ -212,7 +229,7 @@ animation-name: b;
     }
 
        .ornek .cıkıs{
-         color: aliceblue;
+         color: rgb(255, 255, 255);
          font-size: 24px;
            right: 0;
         position: absolute;
@@ -220,6 +237,10 @@ animation-name: b;
         font-weight: bold;
         margin-right: 15px;
         margin-top: 10px;
+        background-color: #4C4C4C;
+        width: 38px;
+        height: 38px;
+        text-align: center;
        }
 
        
@@ -311,13 +332,19 @@ flex-flow: column;
 
 .Footer{
     width: 100%;
-    height: 100px;
+    height: 150px;
     
-    margin-top: 60px;
+    
     font-size: 20px;
+    background-color: #eeeeee;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 .Footer p{
     text-align: center;
+    font-weight: 900;
 }
 .sosyal-icon{
     display: flex;
@@ -331,6 +358,100 @@ flex-flow: column;
     margin: 15px;
    
 }
+
+.froms{
+    background-color: #4C4C4C;
+    height:auto;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    z-index: 999;
+
+}
+.from-content{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 80%;
+    position: relative;
+}
+.from-content .from-baslık{
+    font-size: 24px;
+    font-weight: bold;
+    color: #F4F4F4;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+.from-content .from-dzt{
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 5px;
+    
+    margin-bottom: 15px;
+    background-color: #DBDBDB;
+    color: #4C4C4C;
+}.lable-mesaj{
+ 
+    font-size: 12px;
+    color: #F4F4F4;
+    transition: 300ms all;
+    opacity: 0;
+    margin-top: -10px;
+   margin-bottom: 3px;
+    
+  
+}
+
+.email:focus + .lable-mesaj{
+    opacity: 1;
+}
+
+
+.uyarı-ad{
+    color: #F4F4F4;
+    font-size: 12px;
+   
+  transition: 350ms all;
+  opacity:1 !important;
+  margin-left: -200px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+
+    
+}
+
+
+.active{
+       color: #F4F4F4;
+    font-size: 12px;
+   opacity: 0;
+  transition: 350ms all;
+  
+  margin-left: -200px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+
+}
+
+.from-dzt:focus  {
+  background-color: #F4F4F4;
+}
+#btn-from{
+    padding: 10px 15px;
+    background-color: #94deed;
+    width: 60%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+       
+}
+
+
+
+
 /* yapılacak şeyler silder alanına çerceve tarzı bisey eklenecek 
 numara olan kısımdaki renkler düzgün secilecek 
 logo düzenlenecek ve hareket katılacak
