@@ -73,8 +73,6 @@ let btn =document.querySelector('.btn');
 if(email.value!=''&& name.value!='' && konu.value!='' &&messagee.value!='' ){
    
 
-console.log('call');
-     console.log(bodyy);
   Email.send({
   Host : "smtp.gmail.com",
 
@@ -90,24 +88,36 @@ console.log('call');
     Body : bodyy
   }).then(
             message => alert(message)
+
+
+       
             
       );
 
-    
 
+
+
+
+    
+ 
 
 }
 
 else{
-   console.log('basıldı');
+   
 }
 
 
 
+
+
+email.value='';
+name.value='';
+konu.value='';
+messagee.value='';
     
         })
 
-        function fromrest(){
-         email.value='' && konu.value==''&& email.value=='' &&messagee.value=='';
+     
 
-        }
+
