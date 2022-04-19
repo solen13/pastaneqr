@@ -162,7 +162,8 @@ const ornekacılır=document.querySelector('.ornek');
    document.querySelectorAll('.ul-contener .li-content img').forEach(imaage=>{
                 imaage.onclick=()=>{
                      document.querySelector('.ornek').style.display='block';
-                     document.querySelector('.ornek img').src=imaage.getAttribute('src');      
+                     document.querySelector('.ornek img').src=imaage.getAttribute('src');
+              
                         
              body.style.overflow='hidden';
 
@@ -180,3 +181,14 @@ const ornekacılır=document.querySelector('.ornek');
 
 
 
+            var dahafazlaBTN=document.getElementById('dahafazla-btn');
+            var gorunulukDahafazla=document.getElementById('gorunluk-none');
+
+            dahafazlaBTN.addEventListener('click',e=>{
+                console.log('bastın');
+                gorunulukDahafazla.style.display='flex';
+
+             
+
+
+            })
