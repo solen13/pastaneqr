@@ -182,13 +182,22 @@ const ornekacılır=document.querySelector('.ornek');
 
 
             var dahafazlaBTN=document.getElementById('dahafazla-btn');
+            var dahaaz=document.getElementById('Dahaaz');
             var gorunulukDahafazla=document.getElementById('gorunluk-none');
 
             dahafazlaBTN.addEventListener('click',e=>{
-                console.log('bastın');
+           
                 gorunulukDahafazla.style.display='flex';
 
              
-
-
+                dahafazlaBTN.style.display='none';
+                dahaaz.style.display='block';
+                 
             })
+
+             dahaaz.addEventListener('click',e=>{
+                dahaaz.style.display='none';
+                dahafazlaBTN.style.display='block';
+                   gorunulukDahafazla.style.display='none';
+              
+             })
