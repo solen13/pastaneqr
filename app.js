@@ -181,7 +181,7 @@ const ornekacılır=document.querySelector('.ornek');
 
 
 
-         //   var dahafazlaBTN=document.getElementById('dahafazla-btn');
+            var dahafazlaBTN=document.getElementById('dahafazla-btn');
             var gorunulukDahafazla=document.getElementById('gorunluk-none');
 
             dahafazlaBTN.addEventListener('click',e=>{
