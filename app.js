@@ -167,6 +167,8 @@ const ornekacılır=document.querySelector('.ornek');
                         
              body.style.overflow='hidden';
 
+             
+
                 }
 
             })

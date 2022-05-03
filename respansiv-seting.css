@@ -1,0 +1,115 @@
+@media only screen and (min-width:575px) {
+
+.Banner .silder{
+    width: 100%;
+    height: 500px;
+ 
+ 
+}
+
+ .silder-image {
+    width: 100%;
+    height: 100%;
+   object-fit:cover;
+}
+
+
+.galeri ul li{
+
+   width: 226px;
+   height: auto;
+  margin:5px ;
+ 
+
+
+}
+.dahafazla-btn{
+
+
+margin-left: 40%;
+
+
+}
+
+.Header{
+    width: 100%;
+    height: 170px;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+   
+}
+.Header img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.ornek{
+      
+        
+      
+        
+        width: 50% !important;
+        height: 400px !important;
+        
+      margin-top: 5%;
+      margin-left: 25%;
+      z-index: 9999;
+     
+    }
+
+   .ornek img{
+      width: 100%;
+         height: 100%;
+       
+        
+        border-radius: 5px;
+        margin: auto;
+        border: 3px solid rgb(105, 102, 102);
+
+    }
+   .header-iletisim h1 {
+
+    font-size: 36px;
+
+    
+}
+
+
+.header-iletisim a {
+  
+      font-size: 2.5rem;
+    
+}
+.header-iletisim p{
+  
+    font-size: 24px;
+    
+
+color: rgb(97, 93, 93);
+}
+
+
+.li-content{
+   margin-left: 5px;
+}
+}
+
+@media only screen and (min-width:900px){
+.Banner .silder{
+  
+    width: 700px;
+    height: 500px;
+ 
+ 
+}
+
+ .silder-image {
+    width: 100%;
+    height: 100%;
+   object-fit:cover;
+}
+}
