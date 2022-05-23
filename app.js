@@ -159,29 +159,37 @@ const cıkıs=document.querySelector('.cıkıs');
 const body=document.querySelector('body');
 const ornekacılır=document.querySelector('.ornek');
 
-   document.querySelectorAll('.ul-contener .li-content img').forEach(imaage=>{
+             document.querySelectorAll('.ul-contener .li-content img').forEach(imaage=>{
                 imaage.onclick=()=>{
                      document.querySelector('.ornek').style.display='block';
                      document.querySelector('.ornek img').src=imaage.getAttribute('src');
-              
-                        
-             body.style.overflow='hidden';
+                     document.querySelector('.dowland').href=imaage.getAttribute('src');
+
+
+                   body.style.overflow='hidden';
+               
+
+                
 
              
 
                 }
 
+
             })
+        
+
+
+
+
+
+
+
+
             cıkıs.addEventListener('click',e=>{
                 ornekacılır.style.display='none'
                   body.style.overflow='visible';
             })
-
-  
-
-
-
-
 
             var dahafazlaBTN=document.getElementById('dahafazla-btn');
             var dahaaz=document.getElementById('Dahaaz');
